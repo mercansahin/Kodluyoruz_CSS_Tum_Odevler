@@ -1,0 +1,51 @@
+/* Tüm öğelere varsayılan margin ve padding değerleri verilir. */
+* {
+    margin: auto;
+    padding: auto;
+}
+
+#foto {
+    margin-top: 10px;
+    text-align: center; /* Fotoğrafı yatayda ortalar. */
+}
+
+#search {
+    height: 65px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(238, 232, 232);
+    text-align: center;
+}
+
+.button {
+    margin-top: 4px; /* Butonlar arasına üstten 4px boşluk ekler. */
+}
+
+#links {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.kutu {
+    height: 100px;
+    float: left; /* Kutuları sola yaslar, yan yana gelmelerini sağlar. */
+    width: 33.33%; /* Kutunun genişliği, toplam genişliğin üçte biri kadar olur. */
+    padding-top: 13px;
+    text-align: center;
+    box-sizing: border-box; /* Kutunun içerik alanı + kenar çizgileri tüm genişliği kapsar. */
+    border: 1px white solid; /* Kutunun etrafına beyaz renkte 1px kalınlığında bir sınır ekler. */
+}
+
+.kutu a:link{
+    color: rgb(147, 26, 151); /* Bağlantıların varsayılan rengini değiştirir */
+}
+
+.kutu a:hover {
+    color: brown; /* Bağlantı üzerine gelindiğinde rengini brown yapar. */
+}
+
+#copyright {
+    clear: both; /* Kutuların altına konumlanmasını sağlar. */
+    padding-top: 10px;
+    text-align: center; /* Metni ortalar. */
+}
