@@ -1,0 +1,218 @@
+.header {
+    display: flex; /* Liste elemanlarını yatay hizalar */
+    align-items: center; /* Elemanları dikey olarak ortalar */
+    margin: 10px; /* Tüm kenarlardan 10px dış boşluk bırakır */
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    justify-content: flex-end; /* Liste elemanlarını sağa hizalar */
+}
+
+/* About ve Store linklerini sola almak için */
+.left-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: auto; /* About ve Store'un sola gitmesini sağlar */
+}
+
+.right-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile {
+    border-radius: 55%;
+}
+
+  
+.headerli a {
+    color: black;
+    text-align: center; /* Metni ortalar */
+    padding: 0 5px; 
+    text-decoration: none; /* Bağlantı altındaki varsayılan çizgiyi kaldırır */
+}
+  
+.headerli a:hover {
+    text-decoration: underline; /* Fareyle üzerine gelindiğinde altını çizer */
+}
+  
+.container {
+    text-align: center;
+    margin: 100px;
+}
+  
+.search-area {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: -77px;
+    width: 582px;
+}
+  
+.search-area:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+  
+.search {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px; /*Üst Sağ Alt Sol*/
+}
+  
+.search-img {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+  
+.search-img span {
+    color: #85898d;
+    height: 20px;
+    width: 20px;
+    fill: currentColor; /* Varsayılan renk olarak belirtileni kullanır */
+    position: relative; /* Konumlandırma ayarı yapar */
+}
+  
+  .input-enter {
+    display: flex;
+    flex: 1; /* Alanın tamamını kaplamasını sağlar */
+    flex-wrap: wrap; /* İçerik genişliği aşarsa alt satıra geçmesini sağlar */
+  }
+  
+  .input-area {
+    color: transparent; /* Metnin rengini görünmez yapar */
+    flex: 100%; /* Alanın tamamını kaplamasını sağlar */
+    white-space: pre; /* Boşlukları korur */
+    font: 16px arial, sans-serif;
+    line-height: 34px; /* Satır yüksekliğini belirler */
+    height: 34px !important; /* Yüksekliği zorunlu olarak 34 piksel yapar */
+    display: block; /* Blok öğe yapar */
+  }
+  
+  .input {
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    padding: 0; /* İç boşlukları sıfırlar */
+    border: none; /* Kenarlığı tamamen kaldırır */
+    outline: none; /* Kenarlık tıklanınca mavi çerçeve oluşmasını engeller */
+    display: flex;
+    flex: 100%; 
+    margin-top: -67px; /* Üst boşluğu yukarı kaydırır */
+    font: 16px arial, sans-serif; 
+    width: 450px;
+    height: 34px !important;
+    text-align: start; /* Metni sola hizalar */
+    appearance: textfield; /* Varsayılan giriş alanı görünümünü kullanır */
+    cursor: text; /* Fareyi metin imlecine çevirir */
+}
+
+.voice-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-search img {
+    width: 24px; /* Görselin boyutunu ayarla */
+    cursor: pointer; /* Üzerine gelindiğinde imleci değiştir */
+    margin-right: 10px;
+}
+
+.camera-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera-search img {
+    width: 24px; /* Görselin boyutunu ayarla */
+    cursor: pointer; /* Üzerine gelindiğinde imleci değiştir */
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar (eğer yükseklik belirlenmişse) */
+    margin-top: 5px; /* Arama kutusuyla arasına boşluk bırakır */
+}
+
+.googlesearch {
+    border-radius: 15px;
+    border: 1px solid #f2f2f2; 
+    font-family: Arial, sans-serif; /* Yazı tipi Arial */
+    color: #5f6368; /* Yazı rengi */
+    font-size: 14px; /* Yazı boyutu */
+    margin: 11px 10px;
+    padding: 0 16px;
+    height: 36px; /* Buton yüksekliği */
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer; /* Üzerine gelindiğinde imleç değişimi */
+    user-select: none;
+}
+
+.googlesearch:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+    border-color: #dadce0; /* Kenar rengi hoverda değişir */
+}
+  
+.feelinglucky {
+    border-radius: 15px;
+    border: 1px solid #f2f2f2; 
+    font-family: Arial, sans-serif; /* Yazı tipi Arial */
+    color: #5f6368; /* Yazı rengi */
+    font-size: 14px; /* Yazı boyutu */
+    padding: 0 16px;
+    height: 36px; /* Buton yüksekliği */
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.feelinglucky:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+    border-color: #dadce0; /* Kenar rengi hoverda değişir */
+}
+  
+.footer {
+    background-color: #f2f2f2;
+    list-style-type: none; /* Liste işaretlerini (• gibi) kaldırır */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #dfe1e5;
+    border-top: 1px solid #dadce0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: -8px;
+    line-height: 10px;
+}
+  
+.footerli {
+    float: left;
+}
+  
+.footerli a {
+    display: block;
+    color: #484849;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin-left: 14px;
+    margin-right: -20px;
+}
+  
+.footerli a:hover {
+    text-decoration: underline;
+}
